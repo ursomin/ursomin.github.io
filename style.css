@@ -1,0 +1,203 @@
+/*
+  Name: Gyumin Kim
+  Date: April 3, 2026
+  Section: IAB 6068
+
+  This is the styles.css file for my CSP 1 portfolio website.
+  It is shared by both about.html and football.html to provide a consistent layout, colors, typography, and overall visual style.
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f5f5f7;
+  color: #1d1d1f;
+  font-family: 'Inter', 'Noto Sans KR', sans-serif;
+}
+
+.page {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* ---------------nav 영역--------------- */
+header {
+  margin-top: 15px;
+  position: sticky;
+  top: 10px;
+  z-index: 1000;
+}
+
+nav {
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 15px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+nav a {
+  color: #1d1d1f;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-left {
+  margin: 0;
+  font-weight: 700;
+}
+
+/* ---------------hero 영역--------------- */
+.hero {
+  text-align: center;
+  padding: 80px 20px 80px;
+}
+
+.intro-up {
+  margin-bottom: 8px;
+  color: #6e6e73;
+  font-size: 20px;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: 55px;
+  font-weight: 700;
+}
+
+.intro-down {
+  margin: 20px auto;
+  color: #6e6e73;
+  font-size: 20px;
+}
+
+.football-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0071e3;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+/* ---------------카드 섹션 영역--------------- */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* 개별 카드 공통 스타일 */
+.card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.card h2 {
+  margin-top: -10px;
+  margin-bottom: 15px;
+  font-size: 25px;
+}
+
+.card p {
+  margin: 8px 0;
+  color: #3a3a3c;
+}
+
+.card a {
+  color: #0071e3;
+  text-decoration: none;
+}
+
+.card.full ul {
+  list-style: none;
+}
+
+/* 1/2 너비 카드 */
+.card.half {
+  width: 48%; /* gap:20px로 인해 48% width 사용 */
+}
+
+.card.half > img {
+  width: 100%;
+}
+
+.profile {
+  display: flex;
+  gap: 20px;
+}
+
+.profile > img {
+  width: 40%;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+/* 100% 너비 카드 */
+.card.full {
+  width: 100%;
+}
+
+nav li:hover,
+.card a:hover {
+  text-decoration: underline;
+}
+
+/* ---------------footer 영역--------------- */
+footer {
+  margin: 40px;
+  text-align: center;
+  color: #6e6e73;
+  font-size: 15px;
+}
+
+/* gpt가 제안한 반응형 처리 (to 모바일이나 탭 유저) */
+@media (max-width: 768px) {
+  nav {
+    max-width: 100%;
+  }
+
+  .cards {
+    flex-direction: column;
+    padding: 0 16px;
+  }
+
+  .card.half,
+  .card.full {
+    width: 100%;
+  }
+
+  .profile {
+    flex-direction: column;
+  }
+
+  .profile > img {
+    width: 100%;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+  }
+}
