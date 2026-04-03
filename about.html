@@ -1,0 +1,122 @@
+<!--
+  Name: Gyumin Kim
+  Date: April 3, 2026
+  Section: IAB 6068
+
+  This is the about.html page for my CSP 1 website.
+  It contains my introduction, experience, activities, favorites, and contact information.
+  It also includes a link to my football page, which showcases photos from the matches and stadiums I have visited.
+-->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>About | Gyumin Kim</title>
+  </head>
+
+  <body>
+    <div class="page">
+      <!-- 페이지 상단 nav bar 구현 -->
+      <header>
+        <nav>
+          <a class="nav-left" href="about.html">gmkim</a>
+          <ul>
+            <li><a href="#about">about</a></li>
+            <li><a href="#contact">contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- 페이지 hero 영역(한줄소개 및 football 페이지로 이동) 부분 구현 -->
+      <section class="hero">
+        <p class="intro-up">Hello, I’m</p>
+        <h1>Gyumin Kim</h1>
+        <p class="intro-down">
+          A student who loves football and is currently learning Web.
+        </p>
+        <a class="football-button" href="football.html"
+          >View my football page</a
+        >
+      </section>
+
+      <!-- 각각의 카드 섹션 구현 -->
+      <section class="cards">
+        <article class="card half" id="about">
+          <h2>About Me</h2>
+          <div class="profile">
+            <img src="img/profile.jpg" alt="profile" />
+            <p>
+              I am currently majoring in Information and Communication
+              Engineering at Incheon National University. <br />
+              Lately, I've been focusing on studying information security and
+              web.
+            </p>
+          </div>
+        </article>
+
+        <article class="card half">
+          <h2>Experience</h2>
+          <p>
+            Republic of Korea Army (9th Infantry Division) | Apr 2024 – Sep 2025
+          </p>
+          <p>
+            Emergency Steering Committee, College of Information Technology |
+            2024
+          </p>
+          <p>
+            Student Council, Dept. of Information & Communication Engineering |
+            2022 – 2023
+          </p>
+        </article>
+
+        <article class="card half">
+          <h2>Activity</h2>
+          <p>
+            I’m a member of a club called 'Hacklipse', <br />
+            where we study web, system, and reversing topics.
+          </p>
+          <p>
+            <a href="https://hacklipse.kr" target="_blank"> Visit Hacklipse </a>
+          </p>
+        </article>
+
+        <article class="card half">
+          <h2>Favorites</h2>
+          <p>Playing football</p>
+          <p>Watching football</p>
+          <p>Playing FC Online</p>
+        </article>
+
+        <article class="card full" id="contact">
+          <h2>Contact</h2>
+          <ul>
+            <li>
+              Email:
+              <a href="mailto:gmkim.kor@gmail.com">gmkim.kor@gmail.com</a>
+            </li>
+            <li>
+              GitHub:
+              <a href="https://github.com/ursomin" target="_blank">
+                github.com/ursomin
+              </a>
+            </li>
+            <li>
+              Instagram:
+              <a href="https://instagram.com/u_r_so_min" target="_blank">
+                @u_r_so_min
+              </a>
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <!-- footer 구현 -->
+      <footer>
+        <p>© 2026 Gyumin Kim | Incheon National University | 202201563</p>
+      </footer>
+    </div>
+  </body>
+</html>

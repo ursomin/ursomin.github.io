@@ -1,0 +1,123 @@
+<!--
+  Name: Gyumin Kim
+  Date: April 3, 2026
+  Section: IAB 6068
+
+  This is the football.html page for my CSP 1 website.
+  It contains photos and short information about the football matches and stadiums I have visited.
+-->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Football Memories</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <!-- 페이지 상단 nav bar 구현 -->
+      <header>
+        <nav>
+          <a class="nav-left" href="about.html">gmkim</a>
+          <ul>
+            <li><a href="about.html#about">about</a></li>
+            <li><a href="about.html#contact">contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <section class="hero">
+        <h2>My Football Memories</h2>
+        <p class="intro-down">I'm real serious about football >.-</p>
+      </section>
+
+      <!-- 성능을 올리기 위해 img태그 안에 width, height, loading 적용(gpt 제안) -->
+      <section class="cards">
+        <article class="card half">
+          <h2>2025.09.14</h2>
+          <img
+            src="img/icon.jpg"
+            alt="seoul worldcup stadium"
+            width="372"
+            height="496"
+            loading="lazy"
+          />
+          <p>Nexon Icon match (FC Spear vs Shield UTD)</p>
+          <p>Seoul Worldcup Stadium, Seoul</p>
+        </article>
+
+        <article class="card half">
+          <h2>2024.03.17</h2>
+          <img
+            src="img/arsenal.jpg"
+            alt="emirate stadium"
+            width="372"
+            height="496"
+            loading="lazy"
+          />
+          <p>Arsenal FC Tour</p>
+          <p>Emirates Stadium, London</p>
+        </article>
+
+        <article class="card half">
+          <h2>2024.03.16</h2>
+          <img
+            src="img/spurs.jpg"
+            alt="tottenham hotspur stadium"
+            width="372"
+            height="496"
+            loading="lazy"
+          />
+          <p>Tottenham Hotspur Tour</p>
+          <p>Tottenham Hotspur Stadium, London</p>
+        </article>
+
+        <article class="card half">
+          <h2>2024.03.16</h2>
+          <img
+            src="img/chelsea.jpg"
+            alt="stamford bridge stadium"
+            width="372"
+            height="496"
+            loading="lazy"
+          />
+          <p>Chelsea FC Tour</p>
+          <p>Stamford Bridge, London</p>
+        </article>
+
+        <article class="card half">
+          <h2>2024.03.04</h2>
+          <img
+            src="img/madrid.jpg"
+            alt="bernabeu stadium"
+            width="372"
+            height="496"
+            loading="lazy"
+          />
+          <p>Real Madrid Vs RB Leipzig (UCL, Round of 16)</p>
+          <p>Santiago Bernabeu Stadium, Madrid</p>
+        </article>
+
+        <article class="card half">
+          <h2>2023.10.13</h2>
+          <img
+            src="img/korea.jpg"
+            alt="seoul worldcup stadium"
+            width="372"
+            height="496"
+            loading="lazy"
+          />
+          <p>Republic of Korea Vs Tunisia (Friendly Match)</p>
+          <p>Seoul Worldcup Stadium, Seoul</p>
+        </article>
+      </section>
+
+      <!-- footer 구현 -->
+      <footer>
+        <p>© 2026 Gyumin Kim | Incheon National University | 202201563</p>
+      </footer>
+    </div>
+  </body>
+</html>
