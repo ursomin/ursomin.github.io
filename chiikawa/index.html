@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#f6f3ec">
+    <meta name="description" content="우사기, 치이카와, 하치와레를 위한 3D 대리석 피팅룸.">
+    <title>Marble Atelier | 먼작귀 3D 피팅룸</title>
+
+    <script type="module" crossorigin src="./assets/index-VW2-oot7.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-BHRD7qYm.css">
+  </head>
+  <body>
+    <main class="stage" id="stage" aria-label="Marble Atelier 3D 피팅룸">
+      <div class="stage-tools">
+        <div class="view-switch" role="group" aria-label="카메라 구도">
+          <button type="button" id="wide-view" aria-pressed="true">전체 보기</button>
+          <button type="button" id="close-view" aria-pressed="false">가까이 보기</button>
+        </div>
+        <div class="stage-actions">
+          <button class="reference-button" id="open-references" type="button">캐릭터 원화</button>
+          <button class="camera-reset" id="reset-view" type="button" aria-label="카메라 초기화" title="카메라 초기화">↺</button>
+        </div>
+      </div>
+      <div class="model-labels" id="model-labels"></div>
+      <p class="stage-message" id="stage-message" role="status">피팅룸을 준비하고 있어요…</p>
+      <aside class="wardrobe" id="wardrobe" aria-label="옷장">
+        <div class="character-controls">
+          <div class="character-picker" id="character-picker" role="group" aria-label="캐릭터 선택"></div>
+          <p class="look-summary" id="look-summary" aria-live="polite"></p>
+        </div>
+        <div class="item-controls">
+          <div class="wardrobe-bar">
+            <div class="category-picker" id="category-picker" role="group" aria-label="옷장 분류">
+              <button class="category" type="button" data-slot="clothes" aria-pressed="true">의상</button>
+              <button class="category" type="button" data-slot="accessory" aria-pressed="false">소품</button>
+            </div>
+            <button class="remove-button" id="remove-item" type="button">벗기기</button>
+          </div>
+          <div class="outfit-grid" id="outfit-grid" role="group" aria-label="옷장 아이템"></div>
+        </div>
+      </aside>
+    </main>
+    <dialog id="references-dialog" aria-labelledby="references-title">
+      <div class="reference-heading">
+        <h2 id="references-title">캐릭터 원화</h2>
+        <form method="dialog"><button class="camera-reset" type="submit" aria-label="닫기">×</button></form>
+      </div>
+      <div class="reference-grid" id="reference-grid"></div>
+      <a class="source-link" href="https://www.anime-chiikawa.jp/chara.html" target="_blank" rel="noopener noreferrer">TV 애니메이션 치이카와 공식 캐릭터 페이지</a>
+      <p class="reference-credit">© 나가노 / 치이카와 제작위원회</p>
+    </dialog>
+  </body>
+</html>
